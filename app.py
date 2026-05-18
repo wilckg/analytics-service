@@ -149,6 +149,7 @@ def sqs_worker_loop():
 app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 
+
 @app.route("/health")
 def health():
     """Endpoint simples de health check."""
